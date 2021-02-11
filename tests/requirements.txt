@@ -1,1 +1,1 @@
-kaitaistruct
+kaitaistruct==0.9

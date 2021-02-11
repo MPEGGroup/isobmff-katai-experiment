@@ -35,9 +35,7 @@ seq:
         0: u4
         1: u8
   - id: reserved2
-    contents: [0x00, 0x00, 0x00, 0x00]
-    repeat: expr
-    repeat-expr: 2
+    contents: [0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00]
   - id: layer
     type: s2
   - id: alternate_group

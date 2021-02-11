@@ -7,3 +7,5 @@
 *.pyc
 
 *.py
+
+venv

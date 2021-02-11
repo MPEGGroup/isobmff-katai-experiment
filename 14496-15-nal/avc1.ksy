@@ -27,7 +27,7 @@ types:
           switch-on: type
           cases:
             'box_type::avcc': avcc
-            #'box_type::md4s' m4ds # optional
+            #'box_type::md4s' m4ds  optional
             _: default
 enums:  
   box_type:

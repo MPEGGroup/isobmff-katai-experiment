@@ -41,8 +41,6 @@ seq:
     contents: [0x00, 0x00]
   - id: reserved2
     contents: [0x00, 0x00, 0x00, 0x00]
-    repeat: expr
-    repeat-expr: 2
   - id: matrix
     type: s4 
     # { 0x00010000,0,0,0,0x00010000,0,0,0,0x40000000 }, Unity matrix

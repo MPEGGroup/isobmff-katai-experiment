@@ -8,17 +8,15 @@ seq:
   - id: reserved_1
     contents: [0x00, 0x00]
   - id: pre_defined_2
-    contents: [0x00, 0x00, 0x00, 0x00]
-    repeat: expr
-    repeat-expr: 3
+    contents: [0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00]
   - id: width
     type: u2
   - id: height
     type: u2
-  - id: horizersolution
+  - id: horizresolution
     type: u4
     #default: 0x00480000
-  - id: verizersolution
+  - id: vertresolution
     type: u4
     #default: 0x00480000
   - id: reserved_2
