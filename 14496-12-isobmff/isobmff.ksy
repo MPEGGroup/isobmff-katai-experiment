@@ -3,6 +3,7 @@ meta:
   title: ISO Base Media File Format (ISOBMFF)
   endian: be
   imports:
+    - ../fourcc
     - ftyp
     - meta
     - moov
@@ -32,7 +33,7 @@ types:
 
       - id: type
         type: u4
-        enum: box_type
+        enum: fourcc::box_type
       
       - id: version
         type: u1
@@ -47,25 +48,15 @@ types:
         type:
           switch-on: type
           cases:
-            'box_type::ftyp': ftyp
-            'box_type::meta': meta(version)
-            'box_type::moov': moov
+            'fourcc::box_type::ftyp': ftyp
+            'fourcc::box_type::meta': meta(version)
+            'fourcc::box_type::moov': moov
             _: default
-    
+
     instances:
       header_size:
         value: 8 + is_full_box.to_i * 4
 
       is_full_box:
-        value: (type == box_type::meta)
+        value: (type == fourcc::box_type::meta)
 
-enums:
-  box_type:
-    0x66747970: ftyp
-    0x66726565: free
-    0x6d646174: mdat
-    0x6d657461: meta
-    0x6D6F6F66: moof
-    0x6d6f6f76: moov
-    0x73696478: sidx
-    0x73747970: styp
