@@ -4,7 +4,7 @@ meta:
   endian: be
 
 doc: |
-  This files collects of the 4cc codes that are defines for box types,
+  This files collects the 4ccs that are defined for box types,
   brands, sample entries, etc.
 
 enums:

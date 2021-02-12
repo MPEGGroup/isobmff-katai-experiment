@@ -2,7 +2,7 @@
 
 import pprint
 from sys import argv
-import isobmff
+from isobmff import isobmff
 
 INPUT_FILE = argv[1]
 
