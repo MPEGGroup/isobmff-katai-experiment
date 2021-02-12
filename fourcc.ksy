@@ -9,6 +9,7 @@ doc: |
 
 enums:
   box_type:
+    # ISO/IEC 14496-12
     0x66747970: ftyp
     0x66726565: free
     0x6d646174: mdat
@@ -21,3 +22,20 @@ enums:
     0x73747970: styp
     0x7472616b: trak
     0x75647461: udta
+
+  brand:
+    # ISO/IEC 14496-12
+    0x69736F32: iso2
+    0x69736F35: iso5
+    0x69736F36: iso6
+    0x69736F6D: isom
+    0x6D703431: mp41
+
+    # ISO/IEC 14496-15
+    0x61766331: avc1
+
+    # ISO/IEC 23009-1
+    0x64617368: dash
+
+    # ISO/IEC 23090-2
+    0x61647469: adti
