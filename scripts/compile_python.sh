@@ -13,3 +13,4 @@ echo 'Done.'
 sed -i '1s/^/from isobmff.fourcc import Fourcc/' isobmff/isobmff.py
 sed -i '1s/^/from isobmff.fourcc import Fourcc/' isobmff/moov.py
 sed -i '1s/^/from isobmff.fourcc import Fourcc/' isobmff/ftyp.py
+sed -i '1s/^/from isobmff.fourcc import Fourcc/' isobmff/mvex.py

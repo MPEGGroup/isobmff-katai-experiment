@@ -13,6 +13,7 @@ enums:
     0x66747970: ftyp
     0x66726565: free
     0x6d646174: mdat
+    0x6d656864: mehd
     0x6d657461: meta
     0x6D6F6F66: moof
     0x6d6f6f76: moov
@@ -21,6 +22,7 @@ enums:
     0x73696478: sidx
     0x73747970: styp
     0x7472616b: trak
+    0x74726578: trex
     0x75647461: udta
 
   brand:
