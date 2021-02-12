@@ -10,9 +10,11 @@ doc: |
 enums:
   box_type:
     # ISO/IEC 14496-12
+    0x65647473: edts
     0x66747970: ftyp
     0x66726565: free
     0x6d646174: mdat
+    0x6D646961: mdia
     0x6d656864: mehd
     0x6d657461: meta
     0x6D6F6F66: moof
@@ -21,8 +23,11 @@ enums:
     0x6d766864: mvhd
     0x73696478: sidx
     0x73747970: styp
+    0x746B6864: tkhd
     0x7472616b: trak
+    0x74726566: tref
     0x74726578: trex
+    0x74747970: ttyp
     0x75647461: udta
 
   brand:

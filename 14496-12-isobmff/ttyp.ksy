@@ -1,12 +1,12 @@
 meta:
-  id: ftyp
+  id: ttyp
   endian: be
   imports:
     - general_type_box
 
-doc: File Type Box
+doc: Track Type Box
 
-doc-ref: ISO/IEC 14496-12:2015, section 4.3
+doc-ref: ISO/IEC 14496-12:2020, section 8.3.5
 
 seq:
   - id: general

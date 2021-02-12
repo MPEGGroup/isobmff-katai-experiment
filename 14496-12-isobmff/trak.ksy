@@ -2,10 +2,12 @@ meta:
   id: trak
   endian: be
   imports:
+    - ../fourcc
     - meta
     - mdia
     - tkhd
     - tref
+    - ttyp
     - default
 
 doc: Track Box
@@ -25,7 +27,7 @@ types:
 
       - id: type
         type: u4
-        enum: box_type
+        enum: fourcc::box_type
 
       - id: version
         type: u1
@@ -40,10 +42,11 @@ types:
         type:
           switch-on: type
           cases:
-            'box_type::meta': meta(version)
-            'box_type::mdia': mdia
-            'box_type::tkhd': tkhd(version, flags.to_s)
-            'box_type::tref': tref
+            'fourcc::box_type::meta': meta(version)
+            'fourcc::box_type::mdia': mdia
+            'fourcc::box_type::tkhd': tkhd(version, flags.to_s)
+            'fourcc::box_type::tref': tref
+            'fourcc::box_type::ttyp': ttyp
             _: default
 
     instances:
@@ -51,13 +54,5 @@ types:
         value: 8 + is_full_box.to_i * 4
 
       is_full_box:
-        value: (type == box_type::meta or
-                type == box_type::tkhd)
-
-enums:
-  box_type:
-    0x65647473: edts
-    0x6d657461: meta
-    0x6D646961: mdia
-    0x746B6864: tkhd
-    0x74726566: tref
+        value: (type == fourcc::box_type::meta or
+                type == fourcc::box_type::tkhd)
