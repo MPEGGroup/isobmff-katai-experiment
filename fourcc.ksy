@@ -15,5 +15,9 @@ enums:
     0x6d657461: meta
     0x6D6F6F66: moof
     0x6d6f6f76: moov
+    0x6d766578: mvex
+    0x6d766864: mvhd
     0x73696478: sidx
     0x73747970: styp
+    0x7472616b: trak
+    0x75647461: udta
