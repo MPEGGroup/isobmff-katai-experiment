@@ -13,5 +13,6 @@ echo 'Done.'
 sed -i '1s/^/from isobmff.fourcc import Fourcc/' isobmff/isobmff.py
 sed -i '1s/^/from isobmff.fourcc import Fourcc/' isobmff/moov.py
 sed -i '1s/^/from isobmff.fourcc import Fourcc/' isobmff/general_type_box.py
+sed -i '1s/^/from isobmff.fourcc import Fourcc/' isobmff/sample_entry.py
 sed -i '1s/^/from isobmff.fourcc import Fourcc/' isobmff/mvex.py
 sed -i '1s/^/from isobmff.fourcc import Fourcc/' isobmff/trak.py

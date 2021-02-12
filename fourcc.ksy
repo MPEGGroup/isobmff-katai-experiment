@@ -46,3 +46,12 @@ enums:
 
     # ISO/IEC 23090-2
     0x61647469: adti
+
+  format:
+    # ISO/IEC 14496-12
+    0x61766331: avc1
+    0x6D703461: mp4a
+
+    # ISO/IEC 14496-15
+    0x68766332: hvc2
+    0x68767433: hvt3
